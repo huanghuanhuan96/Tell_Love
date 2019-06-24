@@ -1,0 +1,61 @@
+body{
+  padding: 0;margin: 0;
+  font-family:Helvetica,"Microsoft Yahei",Arial,STHeiti;
+}
+
+.my_header{
+  width:100%;
+  height:9rem;
+}
+.my_footer{
+  width:100%;
+  height:40rem;
+}
+.text-rose{
+  color:#DF5986 !important;
+}
+a.text-rose:hover, a.text-rose:focus {
+  color: #DF5986 !important;
+}
+.text-brown{
+  color:#857272 !important;
+}
+a.text-brown:hover, a.text-brown:focus {
+  color: #857272 !important;
+}
+.my_m-b{
+  margin-bottom:30px;
+}
+.my_img{
+  width:248px;
+  height:232px;
+}
+.my_img:hover,.my_img2:hover{
+  transition:1s;
+  transform:scale(1.1,1.1);
+  cursor:pointer;
+  box-shadow: 1px 1px 8px #D3D3D3;
+}
+div.my_width>div>p>a,.my_pink{
+  color:#DF5986;
+}
+.btn-pink{
+  color: #fff;
+  background-color: #DF5986 ;
+  border-color: #DF5986 ;
+}
+.btn-pink:focus, .btn-pink.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.btn-pink:hover, .btn-pink.hover {
+  color:#fff;
+}
+a:hover{
+  text-decoration: none;
+}
+a.text-secondary>.my_img2>.card-body>p:last-child{
+  font-size:0.8rem;
+}
+.card{
+  box-shadow: 3px 3px 8px #D3D3D3;
+}

@@ -1,0 +1,29 @@
+.breadcrumb-item + .breadcrumb-item::before{
+    content:">";
+}
+.a_title{
+    border:1px solid #D4CECE;
+    color:#857272 !important;
+}
+.a_title:hover{
+    border:1px solid #DF5986;
+    color:#DF5986 !important;
+}
+.font-dh{
+    font-size: 14px!important ;
+}
+.breadcrumb{
+    background-color: inherit;
+}
+.border-grow{
+    border:1px solid rgba(216,216,216,.35);
+    box-shadow:1px 0 2px 0 rgba(0,0,0,.2);
+}
+.border_czqh{
+    margin:70px 0 50px 0;
+    padding:10px 0 0 10px;
+    border-left:13px solid #DF5986;
+}
+.card>.modal-open>.border-bottom>a.text-dark{
+    font-size:15px;
+}
