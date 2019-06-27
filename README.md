@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# xz_vue
-
 ## Project setup
 ```
 npm install
