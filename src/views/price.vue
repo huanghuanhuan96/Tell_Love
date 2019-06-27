@@ -9,15 +9,15 @@
         </ul>
         <div class="text-brown pl-3 mb-4">
             <div class="float-left pt-3">形 式：</div>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">全部</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">灯海</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">焰火</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">公仔</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">快闪</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">花房</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">大屏幕</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">气球</a>
-            <a href="javascript:;javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">花海</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">全部</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">灯海</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">焰火</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">公仔</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">快闪</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">花房</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">大屏幕</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">气球</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">花海</a>
         </div>
         <div class="text-brown pl-3">
             <div class="float-left mb-3 pt-3">场 地：</div>
@@ -122,7 +122,7 @@
                             <p class="mt-1">已售：1760</p>
                         </div>
                         <div class="col-2 p-0">
-                            <a class="btn btn-sm btn-pink" href="#">预定</a>
+                            <a class="btn btn-sm btn-pink" href="javascript:;">预定</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             <p class="mt-1">已售：1760</p>
                         </div>
                         <div class="col-2 p-0">
-                            <a class="btn btn-sm btn-pink" href="#">预定</a>
+                            <router-link :to="{path:'/details'}" class="btn btn-sm btn-pink" href="javascript:;">预定</router-link>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                             <p class="mt-1">已售：1167</p>
                         </div>
                         <div class="col-2 p-0">
-                            <a class="btn btn-sm btn-pink" href="#">预定</a>
+                            <a class="btn btn-sm btn-pink" href="javascript:;">预定</a>
                         </div>
                     </div>
                 </div>

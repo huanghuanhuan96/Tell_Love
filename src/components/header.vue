@@ -10,7 +10,8 @@
 		      <router-link :to="{path:'/login'}">登录</router-link>
 		</div>
 		<div style="width:5%;float:left" align="right" >
-					<a href="#">注册</a>
+				<router-link :to="{path:'/regist'}">注册</router-link>
+			 
 		</div>
 	</div>
 	<div id="dd1" align="center">
@@ -145,7 +146,7 @@
 					</div>
 				</td>
 				<td>
-					<a href="javascript:;">网站首页<br>HOME</a><br>
+					<router-link :to="{path:'/'}">网站首页<br>HOME</router-link><br>
 					
 				</td>
 				<td>

@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import index from './views/index'
 import Price from './views/price'
 import Login from './views/login'
-import notFound from './views/notFound'
-
-
+import NotFound from './views/notFound'
+import Regist from './views/regist'
+import Details from './views/details'
 
 
 
@@ -14,9 +14,11 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path:"/",component: index},
-    {path:"*", component:notFound},
+    {path:"*", component:NotFound},
     {path:"/price",component:Price},
-    {path:'/login',component:Login}
+    {path:'/login',component:Login},
+    {path:'/regist',component:Regist},
+    {path:"/details", component:Details}
 
     /*{path:"/",component: Index},
     {path:"/index", component:Index},

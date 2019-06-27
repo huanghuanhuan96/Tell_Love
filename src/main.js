@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'//放在node modules中的都不加./
 //import 是ES6中引入模块的语法，只能在vue脚手架中使用
 //等效于node中的const axios=require("axios")
@@ -23,6 +25,7 @@ axios.defaults.withCredentials=true;
 Vue.prototype.axios=axios;
 //xxx.vue中： this.axios.get(...)
 
+Vue.use(ElementUI);
 
 new Vue({
   router,

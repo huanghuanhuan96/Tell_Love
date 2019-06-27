@@ -21,6 +21,14 @@
         </div>
     </div>
 </div>
+<!--右侧固定4张图片-->
+ <div class='right_fixed'>
+   <img src="imgs/left_fix_one.png"  id='right_Small' alt="">
+   <img src="imgs/qq.png"  style="margin-right:1rem;" alt="">
+   <img src="imgs/weixin.png" alt="">
+   <img src="imgs/phone.png" alt="">
+
+ </div>
 <!--服务步骤-->
 <div class="d-flex my_width text-center">
     <div class="d-flex flex-column justify-content-around">
@@ -70,7 +78,7 @@
 <div class="container">
     <!--对N对客户服务-->
     <div class="m-5 my_gray" >
-        <h2>服务全国及海外的互联网求婚策划平台，已经为<span id="p_span" class="my_pink"></span>对客户提供服务</h2>
+        <h2>服务全国及海外的互联网求婚策划平台，已经为<span style="font-size:35px;font-family: MicrosoftYaHei;" class="my_pink"> 3 1 4 4 7 </span>对客户提供服务</h2>
     </div>
     <!--求婚图-->
     <a href="#"><img class="w-100 mb-3" src="imgs/original.jpg" alt=""/></a>
@@ -1050,6 +1058,34 @@
 .my_footer{
     width:100%;
     height:40rem;
+}
+.right_fixed{
+    width:100px;
+    position:fixed;
+    right: 0px;
+    bottom: 5rem;  
+      
+
+}
+.right_fixed :not(#right_Small){
+  width:58px;
+  height:58px;
+  background-color:#fff;
+  border:1px solid #fff;
+  border-radius:50%;
+  display:block;
+  padding:2px;
+
+  margin-bottom: 1rem;
+  margin-right:-1rem;
+}
+.right_fixed :not(#right_Small):hover{
+    box-shadow: 
+}
+#right_Small{
+    width:80px;
+    height:80px;
+    margin-right: 2rem;
 }
 .text-rose{
     color:#DF5986 !important;
