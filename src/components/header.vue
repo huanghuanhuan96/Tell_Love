@@ -1,16 +1,16 @@
 <template>
   <header id="header" class="mb-4"> 
    <div align="center" id="d2">
-		<div style="width:35%;float:left" align="center">
-				全国
-				
-				热线：15002357016
+		<div style="width:35%;float:left;color:#999999" class='ml-5'  align="center">
+				全 国 浪 漫 热 线：400-900-2572
+			&nbsp;&nbsp;|&nbsp;&nbsp;进入商家中心
 		</div>
 		<div style="width:47%;float:left" align="right" >
 		      <router-link :to="{path:'/login'}">登录</router-link>
 		</div>
 		<div style="width:5%;float:left" align="right" >
-					<a href="#">注册</a>
+				<router-link :to="{path:'/regist'}">注册</router-link>
+			 
 		</div>
 	</div>
 	<div id="dd1" align="center">
@@ -145,7 +145,7 @@
 					</div>
 				</td>
 				<td>
-					<a href="javascript:;">网站首页<br>HOME</a><br>
+					<router-link :to="{path:'/'}">网站首页<br>HOME</router-link><br>
 					
 				</td>
 				<td>
@@ -169,7 +169,7 @@
   </header>
 </template>
 <script>
-  //抛出匿名模块对象
+  //抛出匿名模块对象,将来谁引入都可随意起名字。
   export default {
 		name:"my-header",
 		//组件的js内容

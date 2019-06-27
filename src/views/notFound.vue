@@ -1,13 +1,19 @@
 <template>
  <div class='all'>
+    
   <h1>o(╥﹏╥)o</h1>
   <h3>404</h3>
   <h1>哇哦~页面找不到了</h1>
+   
  </div>
 
 </template>
 <script>
+ 
 export default {
+  data(){   
+    return {}
+  }
   
 }
 </script>

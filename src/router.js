@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from './views/index'
-import Price from './views/price'
+import Index from './views/index'
+import Product from './views/price'
+import priceDetails from './views/priceDetails'
 import Login from './views/login'
-import notFound from './views/notFound'
-
-
+import Regist from './views/regist'
+import NotFound from './views/notFound'
+ 
+ 
 
 
 
@@ -13,10 +15,14 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path:"/",component: index},
-    {path:"*", component:notFound},
-    {path:"/price",component:Price},
-    {path:'/login',component:Login}
+    {path:"/",component: Index},
+    {path:"/login",component:Login},
+    {path:"/regist",component:Regist},
+    {path:"/price",component:Product},
+    {path:"/priceDetails/:pid",name:'priceDetails',component:priceDetails,props:true},
+    {path:"*", component:NotFound}
+    
+   
 
     /*{path:"/",component: Index},
     {path:"/index", component:Index},

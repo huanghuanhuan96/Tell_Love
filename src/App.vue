@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <!-- 加载公共的页头组件标签 -->
-    <my-header></my-header>
+    <!-- 加载公共的页头组件标签 header,footer 单独写在每个小组件中-->
       <router-view/>
-    <my-footer></my-footer>
   </div>
 </template>
 

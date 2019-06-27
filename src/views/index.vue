@@ -1,6 +1,7 @@
 <template> 
 
  <div>
+      <my-header></my-header>
  <!--视频-->
 <div class="index_banner" style="background-image: url('imgs/c1200.png')">
     <div class="index_banner-video" id="index_banner-video">
@@ -21,6 +22,14 @@
         </div>
     </div>
 </div>
+<!--右侧固定4张图片-->
+ <div class='right_fixed'>
+   <img src="imgs/left_fix_one.png"  id='right_Small' alt="">
+   <img src="imgs/qq.png"  style="margin-right:1rem;" alt="">
+   <img src="imgs/weixin.png" alt="">
+   <img src="imgs/phone.png" alt="">
+
+ </div>
 <!--服务步骤-->
 <div class="d-flex my_width text-center">
     <div class="d-flex flex-column justify-content-around">
@@ -70,7 +79,7 @@
 <div class="container">
     <!--对N对客户服务-->
     <div class="m-5 my_gray" >
-        <h2>服务全国及海外的互联网求婚策划平台，已经为<span id="p_span" class="my_pink"></span>对客户提供服务</h2>
+        <h2>服务全国及海外的互联网求婚策划平台，已经为<span style="font-size:35px;font-family: MicrosoftYaHei;" class="my_pink"> 3 1 4 4 7 </span>对客户提供服务</h2>
     </div>
     <!--求婚图-->
     <a href="#"><img class="w-100 mb-3" src="imgs/original.jpg" alt=""/></a>
@@ -82,27 +91,28 @@
             <p>我 们 只 用 服 务 和 效 果 说 话</p>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-12 my_m-b">
+            <div class="col-md-4 col-sm-12 my_m-b" v-for='(item,index) of firstList' :key='index'>
                 <div class="card">
                     <div class="card-body p-0 modal-open">
-                        <img class="w-100 my_img" src="imgs/c/1.jpg" alt=""/>
-                        <p class=" border-bottom p-3"><a class="text-dark" href="#">「定制」个性小定制</a></p>
+                        <img class="w-100 my_img" :src="`imgs/c/${item.img}`" alt=""/>
+                        <p class=" border-bottom p-3"><a class="text-dark" href="#">{{item.title}}</a></p>
                         <div class="row">
                             <div class="col-6">
-                                <p class="mt-1 my_pink pl-3">¥5000起</p>
+                                <p class="mt-1 my_pink pl-3">¥{{item.price}}起</p>
                             </div>
                             <div class="col-3 p-0">
-                                <p class="mt-1">已售：479</p>
+                                <p class="mt-1">已售：{{item.saled}}</p>
                             </div>
                             <div class="col-2 p-0">
-                                <a class="btn btn-sm btn-pink" href="#">预定</a>
+                                <router-link :to="{path:'/price'}"
+                                class="btn btn-sm btn-pink" >预定</router-link>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col-md-4 col-sm-12">
+            <!--<div class="col-md-4 col-sm-12">
                 <div class="card">
                     <div class="card-body p-0 modal-open">
                         <img class="w-100 my_img" src="imgs/c/2.jpg" alt=""/>
@@ -317,10 +327,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="m-auto pb-3">
                 <a class="btn btn-my_a d-block" href="">查 看 更 多</a>
             </div>
+
         </div>
     </div>
     <!--高端求婚定制-->
@@ -333,17 +344,17 @@
             <p>我 们 只 用 服 务 和 效 果 说 话</p>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-12 my_m-b">
+            <div class="col-md-4 col-sm-12 my_m-b" v-for='(item,index) of secondList' :key='index'>
                 <div class="card">
-                    <div class="card-body p-0 modal-open">
-                        <img class="w-100 my_img" src="imgs/c/dz_1.jpg" alt=""/>
-                        <p class=" border-bottom p-3"><a class="text-dark" href=" javascript:;">「定制」专属高端定制</a></p>
+                    <div class="card-body p-0 ">
+                        <img class="w-100 my_img" :src="`imgs/c/${item.img}`" alt=""/>
+                        <p class=" border-bottom p-3"><a class="text-dark" href=" javascript:;">{{item.title}}</a></p>
                         <div class="row">
                             <div class="col-6">
-                                <p class="mt-1 my_pink pl-3">¥30000起</p>
+                                <p class="mt-1 my_pink pl-3">¥{{item.price}}起</p>
                             </div>
                             <div class="col-3 p-0">
-                                <p class="mt-1">已售：671</p>
+                                <p class="mt-1">已售：{{item.saled}}</p>
                             </div>
                             <div class="col-2 p-0">
                                 <a class="btn btn-sm btn-pink" href=" javascript:;">预定</a>
@@ -353,7 +364,7 @@
                 </div>
 
             </div>
-            <div class="col-md-4 col-sm-12">
+            <!--<div class="col-md-4 col-sm-12">
                 <div class="card">
                     <div class="card-body p-0 modal-open">
                         <img class="w-100 my_img" src="imgs/c/dz_2.jpg" alt=""/>
@@ -473,7 +484,7 @@
                 <div class="card">
                     <div class="card-body p-0 modal-open">
                         <img class="w-100 my_img" src="imgs/c/dz_8.jpg" alt=""/>
-                        <p class=" border-bottom p-3"><a class="text-dark" href=" javascript:;">「 龙猫——可遇见」 宫崎骏动漫主题套餐</a></p>
+                        <p class=" border-bottom p-3"><a class="text-dark" href=" javascript:;">「龙猫——可遇见」宫崎骏动漫主题套餐</a></p>
                         <div class="row">
                             <div class="col-6">
                                 <p class="mt-1 my_pink pl-3">¥26800起</p>
@@ -488,12 +499,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-            </div>
-            <div class="m-auto pb-3">
+            <div class="col-md-4 col-sm-12 my_m-b">
+                <div class="card">
+                    <div class="card-body p-0 modal-open">
+                        <img class="w-100 my_img" src="imgs/c/dz_4.jpg" alt=""/>
+                        <p class=" border-bottom p-3"><a class="text-dark" href=" javascript:;">「微光觅影」浪漫仙境</a></p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="mt-1 my_pink pl-3">¥38800起</p>
+                            </div>
+                            <div class="col-3 p-0">
+                                <p class="mt-1">已售：697</p>
+                            </div>
+                            <div class="col-2 p-0">
+                                <a class="btn btn-sm btn-pink" href=" javascript:;">预定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>-->
+            
+           
+
+              <div class="col-md-4 col-sm-12">
+              </div>
+              <div class="m-auto pb-3">
                 <a class="btn btn-my_a d-block" href="">查 看 更 多</a>
-            </div>
-        </div>
+              </div>
+        </div> 
     </div>
     <!--尊享求婚之服务流程-->
     <div>
@@ -1015,24 +1049,50 @@
         </div>
     </div>
 </div>
+<my-footer></my-footer>
 </div>
+
 </template>
 <script>
-  //1. 先引入header.vue组件对象，临时命名为myHeader，将来组件标签就是<my-header>
-//  import myHeader from "../components/header.vue"
+  //1. 先引入header.vue组件对象，临时命名为Header，将来组件标签就是<my-header> VUE会自动将驼峰翻译为<my-header>
+   
+  import myHeader from "@/components/header.vue"
+  import myFooter from "@/components/footer.vue"
   export default {
+      
     data(){
       return {
-       
+       firstList:[],
+       secondList:[]
                        
-      }
-    },
-   
+           }
+       },
+    mounted(){
+         this.axios.get('http://127.0.0.1:3000/shouye')
+         .then(result=>{
+            this.firstList=result.data.slice(0,12);
+            this.secondList=result.data.slice(12);
+           
+         })
+         .catch(err=>{console.log(err)});
+
+         
+
+
+         },
+         
     //2. 将header.vue设置为当前组件的子组件
-   // components:{
-   //   myHeader
-   // }
+   components:{
+     myHeader,
+     myFooter
+
+   }
+    
   }
+
+   
+   
+ 
 </script>
 
 <style scoped>
@@ -1050,6 +1110,34 @@
 .my_footer{
     width:100%;
     height:40rem;
+}
+.right_fixed{
+    width:100px;
+    position:fixed;
+    right: 0px;
+    bottom: 5rem;  
+      
+
+}
+.right_fixed :not(#right_Small){
+  width:58px;
+  height:58px;
+  background-color:#fff;
+  border:1px solid #fff;
+  border-radius:50%;
+  display:block;
+  padding:2px;
+
+  margin-bottom: 1rem;
+  margin-right:-1rem;
+}
+.right_fixed :not(#right_Small):hover{
+    box-shadow: 
+}
+#right_Small{
+    width:80px;
+    height:80px;
+    margin-right: 2rem;
 }
 .text-rose{
     color:#DF5986 !important;
@@ -1229,7 +1317,8 @@ div.my_width>div>p+p,.my_gray,.btn-my_a{
   background-color: #fff ;
   border:2px solid rgba(133,114,114,.65);
   padding-right: 3rem;
-  padding-left: 3rem;;
+  padding-left: 3rem;
+  margin:0 auto;
 }
 .btn-my_a:focus, .btn-my_a.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);

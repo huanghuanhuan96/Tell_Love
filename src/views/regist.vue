@@ -1,49 +1,43 @@
 <template>
-  	<div id="d1" align="center">
+  <div id="d1" align="center">
 			<div class="cdd1">
-				<h1>登录</h1>
+				<h1 class='newRegist'>新用户注册</h1>
 			</div>
-			<hr width="800px">
 			<div class="d3">
 				<div class="cd1">
 					<span>手机号:</span>
 					<input type="text" placeholder="请输入手机号">
 				</div>
-				<div class="cd1">
+				<div class="cd1 cdd1" id="cdd2">
 					<span>密 码：</span>
 					<input type="password" placeholder="请输入密码"><br>
 				</div>
-				<div>
-					<a href="javascript:;" id="d112">用手机验证码登录</a>
-					<router-link :to="{path:'/regist'}" class='mr-5 pr-5' id="d2">前往注册</router-link><br>
+				<div class="cd1">
+					<span>姓 名：</span>
+					<input type="text" placeholder="怎么称呼您">
 				</div>
-				<router-link :to="{path:'/'}" id="a1">登录</router-link>
+				 
+				<router-link :to="{path:'/'}"> <el-button type="danger"   plain id="a1">完成注册</el-button></router-link>
 			</div>
 		</div>
+  
 </template>
 <script>
-  export default {
-    data(){
-      return {
-
-      }
-    }
-  }
+export default {
+  
+}
 </script>
-
 <style scoped>
- *{
+  		*{
 				margin:0px;padding:0px;
 			}	
 			body{
 				color:#857272;
-      }
-      h1{
-        color:#857272;
-        line-height: 80px;
-      }
-
-			#d1{
+			}
+			.newRegist{
+              color:#999;
+			}
+				#d1{
 				width:880px;
 				height:770px;
 				border:2px solid #857272;
@@ -73,39 +67,24 @@
 				box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
 
 				}
-			#a1{
+				#a1{
 				float:left;
 				width:460px;
 				height:71px;
-				background-color:rgb(233, 165, 177);
 				text-decoration:none;
-				line-height:71px;
+				 
 				border-radius:5px;
 				font-size:24px;
+				color:#999;
 				box-sizing:border-box;
 				background-size:cover;
 				margin-left:211px;
 			}
 			#d2{
-			  width:20%;
-				float:right;
-        margin-left:75rem!important;
-        margin-top:-4rem;
-				text-decoration:none;
-				font-size:17px;
-				background:none;
-			 
-			}
-			#d112{
-				margin:30px;
-				float:left;
-				margin-left:225px;
-				text-decoration:none;
-				font-size:14px;
-				color:#F06;
+				width:300px;
 			}
 			.cd1{
-				margin-top:80px;
+				margin:40px;
 				width:450px;
 				height:50px;
 				text-align:center;
@@ -115,6 +94,10 @@
 			.cdd1{
 				border-bottom:1px solid #E4E4E4;
 				height:80px;
-				line-height:80px; 
+				line-height:80px;
+			}
+			#cdd2{
+				padding-bottom:40px;
 			}
 </style>
+
