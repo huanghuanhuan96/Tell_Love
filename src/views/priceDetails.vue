@@ -253,6 +253,7 @@ axios({
   import myFooter from "@/components/footer.vue"
 
 export default {
+  pics:[],
   data(){
     return {
       right_pics:[1,1,1,1],
@@ -278,8 +279,16 @@ export default {
     }
   },
   mounted(){
-    var url='';
-    this.axios.get(url).then()
+    var url='http://127.0.0.1:3000/details';
+   this.axios.get(url).then(
+       (result)=>{
+         console.log(result);
+       }
+    ).catch(
+      (err)=>{
+        console.log(err)
+      }
+    );
   },
   methods:{
     //导航栏的事件

@@ -1071,14 +1071,9 @@
          this.axios.get('http://127.0.0.1:3000/shouye')
          .then(result=>{
             this.firstList=result.data.slice(0,12);
-            this.secondList=result.data.slice(12);
-           
+            this.secondList=result.data.slice(12);       
          })
          .catch(err=>{console.log(err)});
-
-         
-
-
          },
          
     //2. 将header.vue设置为当前组件的子组件

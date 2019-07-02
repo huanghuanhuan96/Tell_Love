@@ -27,10 +27,7 @@ Vue.prototype.axios=axios;
 //xxx.vue中： this.axios.get(...)
 
 Vue.use(ElementUI);
-<<<<<<< HEAD
 Vue.use(Vuex);//将vuex注册vue实例中
-=======
->>>>>>> 70d26869d6a5d5660e50d4e3b86718a46ed2a8f5
 
 new Vue({
   router,

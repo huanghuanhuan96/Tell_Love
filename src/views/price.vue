@@ -57,9 +57,7 @@
                             <p class="mt-1">已售：{{item.saled}}</p>
                         </div>
                         <div class="col-2 p-0">
-                            
-                             <button class="btn btn-sm btn-pink" @click='toDetails(item.pid)'>预定</button>
-                           
+                             <button class="btn btn-sm btn-pink" @click='toDetails(item.pid)'>预定</button>                   
                         </div>
                     </div>
                 </div>
