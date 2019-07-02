@@ -1131,13 +1131,10 @@
   margin-bottom: 1rem;
   margin-right:-1rem;
 }
-.right_fixed :not(#right_Small):hover{
-    box-shadow: 
-}
 #right_Small{
     width:80px;
     height:80px;
-    margin-right: 2rem;
+    margin-right:2rem;
 }
 .text-rose{
     color:#DF5986 !important;

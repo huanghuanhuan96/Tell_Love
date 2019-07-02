@@ -11,10 +11,21 @@
             <li class="breadcrumb-item">求婚套餐</li>
         </ul>
         <div class="text-brown pl-3 mb-4">
+
         <div class="float-left pt-3">形 式：</div>
             <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0"
             v-for='(item,index) of manyStyle' :key='index'>{{item}}</a>
-            
+            <div class="float-left pt-3">形 式：</div>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">全部</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">灯海</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">焰火</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">公仔</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">快闪</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">花房</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">大屏幕</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">气球</a>
+            <a href="javascript:;" class="btn a_title ml-3 mt-3 font-dh pt-0 pb-0">花海</a>
+
         </div>
         <div class="text-brown pl-3">
             <div class="float-left mb-3 pt-3">场 地：</div>
